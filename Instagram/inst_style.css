@@ -1,0 +1,145 @@
+.main{
+    background: white;
+    margin: 30px;
+    padding-bottom: 44px;
+    width: 100%;
+}
+.images{
+    position: absolute;
+    margin-right: 15px;
+    margin-left:35px;
+    width: 454px;
+    left: 20%;
+    top:20%;
+}
+.register{
+    position: absolute;
+    margin-top: 12px;
+    width: 350px;
+    height: 806.6px;
+    right: 25%;
+    border: 1px solid #e6e6e6;
+    box-sizing: border-box;
+}
+.reg_area{
+    position: absolute;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 348px;
+    color: rgb(0,0,0);
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    left: 10%;
+}
+#logo{
+    position: relative;
+    top:10px;
+    left: 40px;
+}
+.enter_area{
+    position: relative;
+    top: 80%;
+    border: 1px solid #e6e6e6;
+    background-color: white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 348px;
+    text-align: center;
+}
+.download_area{
+    position: relative;
+    top: 76%;
+    left: 15px;
+    border: 1px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 348px;
+}
+.friends{
+    line-height: 20px;
+    position: absolute;
+    font-size: 17px;
+    color: rgb(153,153,153);
+    margin-right: 40px;
+    margin-bottom: 20px;
+    width: 268px;
+    text-align: center;
+}
+.face_button{
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 9px;
+    display: block;
+    color: white;
+    line-height: 18px;
+    position: relative;
+    background-color: rgba(56,151,240,1);
+    border:1px solid transparent;
+    top:85px;
+    left: 10px;
+    width: 268px;
+}
+.facebook_logo{
+    position: relative;
+    top:3px;
+}
+.line{
+    position: relative;
+    color: rgb(153,153,153);
+    top:100px;
+    text-align: center;
+    right: 35px;
+    font-size: 13px;
+}
+.info{
+    top: 60px;
+    left: 10px;
+    position: relative;
+    width: 258px;
+    height: 36px;
+}
+.info_text{
+    position: relative;
+    font-size: 15px;
+    top: 40px;
+    left: 5px;
+    color: rgb(153,153,153);
+}
+.info_area{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 268px;
+    height: 38px;
+    background-color: rgb(250,250,250);
+}
+.reg_button{
+    text-align: center;
+    font-weight: 600;
+    padding: 5px 9px;
+    display: block;
+    color: white;
+    line-height: 18px;
+    position: relative;
+    background-color: rgba(56,151,240,1);
+    border:1px solid transparent;
+    top:130px;
+    left: 10px;
+    width: 268px;
+}
+.uslovia{
+    position: relative;
+    top: 120px;
+    color: #999;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 50px;
+}
+.download{
+    position: relative;
+    text-align: center;
+    right: 10px;
+}
