@@ -1,3 +1,10 @@
+*{
+    margin:0;
+}
+#background{
+    position: relative;
+    top:25px;
+}
 header{
     position: relative;
     height: 80px;
@@ -26,12 +33,14 @@ header{
     padding-left:8px;
 }
 .Text {
+    position: absolute;
     margin-left: 13%;
     float:left;
     width:39%;
     margin-top: 5%;
 }
 .data {
+    position: relative;
     background-color: #fafbfc!important;
     float:right;
     text-align: left;

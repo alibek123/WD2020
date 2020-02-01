@@ -22,8 +22,10 @@ header{
 body{
     background: linear-gradient(white, #E5ECEC);
 }
+
 .logotyp{
     position: relative;
+    top: 10px;
     float: left;
 }
 .Login{
