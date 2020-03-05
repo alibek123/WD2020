@@ -4,35 +4,28 @@ import { Location } from '@angular/common';
 import {ProductService} from '../product.service';
 import {Product} from '../product';
 import {Category} from '../category'
-import { CartService } from '../cart.service';
 @Component({
   selector: 'app-productdetails',
   templateUrl: './productdetails.component.html',
   styleUrls: ['./productdetails.component.css']
 })
 export class ProductdetailsComponent implements OnInit {
-
   categories: Category[];
   product: Product;
   constructor(
     private location: Location,
     private route: ActivatedRoute,
-    private productService: ProductService,
-    private cartService: CartService
-    ){ }
-    addToCart(product) {
-      this.cartService.addToCart(product);
-      window.alert('Your product has been added to the cart!');
-    }
+    private productService: ProductService
+    ){}
+
   ngOnInit(): void {
     this.getProduct();
- 
   }
 
   getProduct(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.productService.getProduct(id)
-      .subscribe(tovar => this.product = tovar);
+      .subscribe(item => this.product = item);
   }
  
 

@@ -5,27 +5,23 @@
   font-family: Arial, Helvetica, sans-serif;
 
   margin-left: auto;
-  left: 42%;
+  left: 45%;
   margin-right: -50%;
 
  
 }
 .main_image{
-  padding-left: 15%;
-    width:265px;
+    width:200px;
     height: 240px;
     
   }
   img{
-    
   width:100%;     
   height: 100%;
   }
   #img{
-  position: relative;
-  margin-left: -115px;
-    width: 35px;
-    height: 35px;
+    width: 25px;
+    height: 25px;
    
   }
   div {
@@ -41,18 +37,21 @@
     font-weight: bold;
   }
   #rating{
-    position: absolute;
-  padding-top: 6%;
-  margin-left: 2%;
-  font-size: 20px;
-
-}
+  position: absolute;
+  padding-left: 2%;
+  
+  margin-top: 1%;
+  
+  }
   button{
     background-color: orange;
     margin-left: 10px;
     
   }
-
+  #rating{
+    margin-top: 7px;
+    margin-left: 30px;
+  }
 
   .products_block{
    
@@ -66,18 +65,13 @@
     width: 400px;
     border: 0.5px solid rgb(189, 199, 216);
     border-radius: 10px;
-   padding-left: 20%;
-   height: 80%;
-   text-align: center;
+   padding-left: 25%;
+   height: 410px;
     
   }
-
   .rating_btn{
-  
-    padding-left: 17%;
-  position: relative;
-   bottom: 5px;
-  
+    position: relative;
+    bottom: 0;
   }
 
  
