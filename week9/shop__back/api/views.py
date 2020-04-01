@@ -1,4 +1,4 @@
-from django.http.response import JsonResponse,Http404
+from django.http.response import JsonResponse, Http404
 
 from api.models import Product, Category
 
@@ -12,8 +12,8 @@ def product_list(request):
 def product_details(request, product_id):
     try:
         products = Product.objects.get(id=product_id)
-    except Product.DoesNotExist as e:
-        return {'error': str(e)}
+    except Product.DoesNotExist:
+        raise Http404
 
     return JsonResponse(products.to_json())
 
