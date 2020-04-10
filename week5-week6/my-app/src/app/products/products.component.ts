@@ -1,12 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { ProductService} from '../product.service'
-import {Product} from '../product'
-import { Location } from '@angular/common';
-import { CATEGORIES } from '../categories';
-import { Category } from '../category';
-
-
+import {Component, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
+import {ProductService} from '../product.service';
+import {Product} from '../product';
+import {Location} from '@angular/common';
+import {CATEGORIES} from '../categories';
+import {Category} from '../category';
 
 
 @Component({
@@ -17,18 +15,21 @@ import { Category } from '../category';
 export class ProductsComponent implements OnInit {
 
   categories: Category[];
-  CATEGORIES = CATEGORIES
+  CATEGORIES = CATEGORIES;
 
   products: Product[];
+
   constructor(
     private location: Location,
     private productService: ProductService,
-    private route: ActivatedRoute) { }
+    private route: ActivatedRoute) {
+  }
 
   ngOnInit(): void {
     this.getProducts();
 
   }
+
   getProducts(): void {
     const id = +this.route.snapshot.paramMap.get('id');
     this.productService.getProductofC(id)
@@ -36,7 +37,7 @@ export class ProductsComponent implements OnInit {
   }
 
 
-  }
-  
+}
+
 
 
