@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MessengerService} from '../../../services/messenger.service';
 import {Product} from '../../../models/product';
+import {Prod} from '../../../product';
 
 @Component({
   selector: 'app-cart',
@@ -22,12 +23,12 @@ export class CartComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.msg.getMsg().subscribe((product: Product) => {
+    this.msg.getMsg().subscribe((product: Prod) => {
         this.addProductToCart(product);
       });
   }
 
-  addProductToCart(product: Product) {
+  addProductToCart(product: Prod) {
 
     let productExists = false;
 

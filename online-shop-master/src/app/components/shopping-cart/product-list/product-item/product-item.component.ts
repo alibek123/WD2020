@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {Product} from '../../../../models/product';
 import {MessengerService} from '../../../../services/messenger.service';
+import {Prod} from '../../../../product';
 
 @Component({
   selector: 'app-product-item',
@@ -9,7 +10,7 @@ import {MessengerService} from '../../../../services/messenger.service';
 })
 export class ProductItemComponent implements OnInit {
 
-  @Input() productItem: Product;
+  @Input() productItem: Prod;
 
   constructor(private msg: MessengerService) { }
 

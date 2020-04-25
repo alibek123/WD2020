@@ -9,13 +9,12 @@ import {AccessoriesComponent} from './components/shopping-cart/product-list/acce
 
 
 const routes: Routes = [
-  {path: '', redirectTo: '/categories', pathMatch: 'full'},
+  {path: '', redirectTo: '/categories/1', pathMatch: 'full'},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'categories', component: CategoryListComponent},
   // { path: 'categories/:id', component: ProductListComponent},
   { path: 'products/:id', component: ProductItemComponent},
-  { path: 'categories/:id', component: AccessoriesComponent}
+  { path: 'categories/:id', component: CategoryListComponent}
 ];
 
 @NgModule({

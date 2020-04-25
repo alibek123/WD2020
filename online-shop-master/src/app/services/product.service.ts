@@ -30,17 +30,24 @@ export class ProductService {
   //   return this.products;
   // }
 
-  getHeroes(): Prod[] {
-    return PRODUCTS;
+  // getProducts(): Prod[] {
+  //   return PRODUCTS;
+  // }
+
+  getProducts(): Observable<Prod[]> {
+    return of(PRODUCTS);
   }
 
   getCategory(): Observable<Category[]> {
     return of(CATEGORIES);
   }
 
+  // getProductofC(categoryId: number): Observable<Prod[]> {
+  //   const products = PRODUCTS.filter(product => product.categoryId === categoryId);
+  //   return of(products);
+  // }
+
   getCategories(id: number): Observable<Category> {
     return of(CATEGORIES.find(category => category.id === id));
-
-
   }
 }

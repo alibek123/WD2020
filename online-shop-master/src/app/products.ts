@@ -37,4 +37,22 @@ export const PRODUCTS: Prod[] = [
     price: 1000,
     image: 'https://img.pngio.com/product-icon-png-76431-free-icons-library-product-png-256_256.jpg'
   },
+  {
+    id: 5,
+    name: 'Product 4',
+    categoryId: 4,
+    categoryName: 'Watches',
+    description: 'Cool watch',
+    price: 1000,
+    image: 'https://img.pngio.com/product-icon-png-76431-free-icons-library-product-png-256_256.jpg'
+  },
+  {
+    id: 6,
+    name: 'Product 4',
+    categoryId: 4,
+    categoryName: 'Watches',
+    description: 'Cool watch',
+    price: 1000,
+    image: 'https://img.pngio.com/product-icon-png-76431-free-icons-library-product-png-256_256.jpg'
+  },
 ];

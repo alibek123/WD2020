@@ -1,21 +1,7 @@
-
-<div class="card col-12" *ngFor="let product of products">
-
-  <img class="bd-placeholder-img card-img-top" height="70" width="70"
-       src="https://img.pngio.com/product-icon-png-76431-free-icons-library-product-png-256_256.jpg" alt="img">
-  <div class="card-body">
-    <p class="card-text">
-      <strong>{{product.price | currency: 'KZT'}}</strong>
-    </p>
-    <p class="card-text">{{product.description}}</p>
-    <div class="d-flex justify-content-between align-items-center">
-      <div class="btn-group">
-        <button type="button"
-                class="btn btn-sm btn-primary product-btn"
-                (click)="handleAddToCart()">Add to Cart
-        </button>
-        <button type="button" class="btn btn-sm btn-secondary product-btn">View Details</button>
-      </div>
+<div class="row col-12">
+  <div class="col-5" *ngFor="let product of listSorted">
+    <div>
+      <app-product-item [productItem]=product></app-product-item>
     </div>
   </div>
 </div>
